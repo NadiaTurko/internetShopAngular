@@ -1,0 +1,11 @@
+app-root{
+  height: 1500px;
+  background: #d6e4f6;
+
+}
+
+.games_body{
+  margin-top: 200px;
+  margin-left: 150px;
+  color: black;
+}

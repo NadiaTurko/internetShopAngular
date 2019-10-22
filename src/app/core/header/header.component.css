@@ -1,0 +1,54 @@
+:host{
+  /*flex-grow: 1;*/
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
+a {
+  font-size: 20px;
+  /*background: rgba(17,15,17,0.86);*/
+  color: #2f2f2f;
+
+}
+
+mat-toolbar{
+  display: flex;
+  position: fixed;
+  /*justify-content: center;*/
+  background: white;
+  height: 100px;
+  z-index: 10;
+  top: 0px;
+}
+.logo{
+margin-right: 300px;
+}
+
+a app-menu {
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+a:hover {
+  color: black;
+}
+
+.dialog {
+  margin: 20px;
+  min-width: 100px;
+}
+
+.mat-raised-button{
+  width: 150px;
+  font-weight: bold;
+}
+
+.mat-raised-button:hover{
+  background: #989898;
+}

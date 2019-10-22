@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-title class="text-center">Sing-up</mat-card-title>
+  <mat-card-content>
+    <form class="form" [formGroup]="form" (submit)="register()">
+
+      <mat-form-field class="full-width">
+      <input matInput placeholder="Ім'я" formControlName="firsName"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+      <input matInput placeholder="Прізвище" formControlName="lastName"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input type="email" matInput placeholder="E-mail" formControlName="email"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input type="password" matInput placeholder="Пароль" formControlName="password" />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input type="password" matInput placeholder="Повторити пароль" formControlName="password_confirmation" />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Дата народження" formControlName="dateOfBirth"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Стать" formControlName="sex"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Місто" formControlName="city"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Країна" formControlName="country"/>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Номер телефону" formControlName="phone"/>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button color="primary">Sing-up</button>
+
+    </form>
+  </mat-card-content>
+</mat-card>

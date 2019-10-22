@@ -1,0 +1,22 @@
+<mat-toolbar >
+  <a class="logo" mat-button routerLink="/">
+    <mat-icon>home</mat-icon>
+    UPLAY</a>
+  <app-menu></app-menu>
+  <span class="flex-grow"></span>
+<!--  <a mat-button routerLink="/auth">-->
+<!--    <mat-icon>account_circle</mat-icon>-->
+<!--    Sing-in-->
+<!--  </a>-->
+<!--  <a mat-button routerLink="/auth/sing-up">-->
+<!--    <mat-icon>directions_walk</mat-icon>-->
+<!--    Sing-up-->
+<!--  </a>-->
+ <a class="dialog">
+   <button mat-raised-button (click)="openDialogIn()">Sing-in</button>
+ </a>
+  <a class="dialog">
+    <button mat-raised-button (click)="openDialogUp()">Sing-up</button>
+  </a>
+  <a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+</mat-toolbar>
